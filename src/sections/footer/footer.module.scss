@@ -1,0 +1,50 @@
+@import "../../styles/media-queries";
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  gap: 80px;
+  margin: 0 auto 104px;
+  max-width: 1140px;
+  padding: 0 32px;
+  text-align: left;
+}
+
+.copyright {
+  white-space: pre-line;
+  opacity: 0.5;
+}
+
+.logoAndCopyright {
+  gap: 42px;
+}
+
+.logo {
+  gap: 10px;
+}
+
+.links {
+  gap: 80px;
+
+  color: #FFFFFF;
+}
+
+.linkSection {
+  gap: 27px;
+
+  > div {
+    gap: 8px;
+  }
+}
+
+.linkSectionTitle {
+  opacity: 0.5;
+}
+
+@include for-small-screens() {
+  .links {
+    gap: 40px;
+  }
+}

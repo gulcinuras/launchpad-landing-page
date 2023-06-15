@@ -1,0 +1,22 @@
+@import "../../styles/media-queries";
+
+.header {
+  margin: 36px 40px;
+}
+
+.logo {
+  gap: 10px;
+}
+
+.links {
+  display: flex;
+  gap: 32px;
+
+  line-height: 17px;
+}
+
+@include for-small-screens() {
+  .links {
+    gap: 16px;
+  }
+}

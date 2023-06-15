@@ -1,7 +1,5 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/
- */
-
-// You can delete this file if you're not using it
+import "./src/styles/_normalize.scss"
+import "./src/styles/_typography-mixin.scss"
+import * as typographyStyles from "./src/styles/_typography.scss"
+import * as alignmentStyles from "./src/styles/_align.scss"
+import "./src/styles/_media-queries.scss"
