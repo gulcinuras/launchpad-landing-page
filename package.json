@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "branch",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "An investment platform that evolves with its community",
+  "version": "0.1.1",
+  "author": "gulcinuras",
   "dependencies": {
     "classnames": "^2.3.2",
     "gatsby": "^5.10.0",
@@ -23,7 +23,7 @@
     "prettier": "^2.8.8"
   },
   "keywords": [
-    "gatsby"
+    "branch"
   ],
   "license": "0BSD",
   "scripts": {
@@ -32,14 +32,10 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
+    "clean": "gatsby clean"
+    },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/gulcinuras/launchpad-landing-page"
   }
 }

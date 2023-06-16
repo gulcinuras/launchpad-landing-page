@@ -36,7 +36,7 @@ const FOOTER_LINKS = [
 
 function Footer() {
   return (
-    <div className={footerStyles.footerContainer}>
+    <div>
       <div className={footerStyles.wavyBg} />
 
       <footer className={classNames(footerStyles.footer, "has-space-between")}>

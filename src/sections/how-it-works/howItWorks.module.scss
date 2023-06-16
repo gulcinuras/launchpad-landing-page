@@ -1,9 +1,10 @@
 @import "../../styles/media-queries";
 
 .howItWorks {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  z-index: 2;
   margin-bottom: 126px;
 }
 
