@@ -1,13 +1,18 @@
 import * as React from "react"
 import classNames from "classnames"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import * as headerStyles from "./header.module.scss"
 
 function Header() {
   return (
-    <header className={classNames(headerStyles.header, "has-space-between", "is-vertically-centered")}>
+    <header
+      className={classNames(
+        headerStyles.header,
+        "has-space-between",
+        "is-vertically-centered"
+      )}
+    >
       <div className={classNames("is-vertically-centered", headerStyles.logo)}>
         <StaticImage src={"../../icons/branch_logo.svg"} alt={"branch logo"} />
 
@@ -15,16 +20,16 @@ function Header() {
       </div>
 
       <div className={headerStyles.links}>
-        <Link>{"Projects"}</Link>
+        <p>{"Projects"}</p>
 
-        <Link>{"Investors"}</Link>
+        <p>{"Investors"}</p>
 
-        <Link>{"Resources"}</Link>
+        <p>{"Resources"}</p>
 
-        <Link>{"About"}</Link>
+        <p>{"About"}</p>
       </div>
 
-      <Link>{"Join Branch now"}</Link>
+      <p>{"Join Branch now"}</p>
     </header>
   )
 }

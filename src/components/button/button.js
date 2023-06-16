@@ -1,9 +1,9 @@
+import * as buttonStyles from "./button.module.scss"
+
 import React from "react"
 import classNames from "classnames"
 
-import * as buttonStyles from "./button.module.scss"
-
-function Button({ children, customClassName }) {
+function Button({children, customClassName}) {
   return (
     <button
       className={classNames(

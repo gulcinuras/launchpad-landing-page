@@ -1,0 +1,53 @@
+@import "../../styles/media-queries";
+
+.howItWorks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin-bottom: 126px;
+}
+
+.howItWorksItem {
+  padding: 48px;
+
+  &:not(:last-of-type) {
+    border-right: 1px solid #232323;
+  }
+}
+
+.howItWorksItemKey {
+  color: #888888;
+
+  margin-bottom: 12px;
+}
+
+.howItWorksItemImgContainer {
+  height: 318px;
+
+  margin: 40px 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background: radial-gradient(circle at center, transparent 0%, #1D1D1D  90%), url(../../images/dotted-bg.svg) center/cover;
+}
+
+.howItWorksItemDescription {
+  max-width: 534px;
+
+  color: #888888;
+}
+
+@include for-mid-range-screens() {
+  .howItWorks {
+    grid-template-columns: 1fr;
+  }
+
+  .howItWorksItem {
+    padding: 48px;
+  
+    &:not(:last-of-type) {
+      border-right: unset;
+      border-bottom: 1px solid #232323;
+    }
+  }
+}

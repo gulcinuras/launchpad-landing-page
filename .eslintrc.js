@@ -15,8 +15,5 @@ module.exports = {
     ],
     "react/jsx-no-bind": "off",
     "func-name-matching": "off",
-    "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-pascal-case": "off"
   },
 };

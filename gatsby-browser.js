@@ -1,5 +1,5 @@
 import "./src/styles/_normalize.scss"
 import "./src/styles/_typography-mixin.scss"
-import * as typographyStyles from "./src/styles/_typography.scss"
-import * as alignmentStyles from "./src/styles/_align.scss"
+import "./src/styles/_typography.scss"
+import "./src/styles/_align.scss"
 import "./src/styles/_media-queries.scss"

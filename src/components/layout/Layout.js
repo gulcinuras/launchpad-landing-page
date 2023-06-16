@@ -8,7 +8,7 @@ import React from "react"
 
 import Header from "../../sections/header/header"
 import Footer from "../../sections/footer/footer"
-import * as layoutStyles from "./layout.module.scss"
+import * as layoutStyles from "./Layout.module.scss"
 
 const Layout = ({ children }) => {
   /*   const data = useStaticQuery(graphql`

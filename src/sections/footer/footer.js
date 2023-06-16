@@ -36,51 +36,63 @@ const FOOTER_LINKS = [
 
 function Footer() {
   return (
-    <footer className={classNames(footerStyles.footer, "has-space-between")}>
-      <div
-        className={classNames("is-flex-column", footerStyles.logoAndCopyright)}
-      >
+    <div className={footerStyles.footerContainer}>
+      <div className={footerStyles.wavyBg} />
+
+      <footer className={classNames(footerStyles.footer, "has-space-between")}>
         <div
-          className={classNames("is-vertically-centered", footerStyles.logo)}
+          className={classNames(
+            "is-flex-column",
+            footerStyles.logoAndCopyright
+          )}
         >
-          <StaticImage src={"../../icons/branch_logo.svg"} alt={"branch logo"} />
-
-          <p className={"typography--logo"}>{"branch"}</p>
-        </div>
-        
-        <p
-          className={footerStyles.copyright}
-        >{`© 2023 Branch.co \n All rights reserved`}</p>
-      </div>
-
-      <div className={classNames("has-space-between", footerStyles.links)}>
-        {FOOTER_LINKS.map(section => (
-          <ul
-            className={classNames(
-              "is-flex-column",
-              footerStyles.linkSection
-            )}
+          <div
+            className={classNames("is-vertically-centered", footerStyles.logo)}
           >
-            <p
-              className={classNames(
-                "typography--tiny",
-                footerStyles.linkSectionTitle
-              )}
-            >
-              {section.title}
-            </p>
+            <StaticImage
+              src={"../../icons/branch_logo.svg"}
+              alt={"branch logo"}
+            />
 
-            <div className={"is-flex-column"}>
-              {section.links.map(link => (
-                <a className={"typography--tiny is-flex-column"} href={link.url}>
-                  {link.title}
-                </a>
-              ))}
-            </div>
-          </ul>
-        ))}
-      </div>
-    </footer>
+            <p className={"typography--logo"}>{"branch"}</p>
+          </div>
+
+          <p
+            className={footerStyles.copyright}
+          >{`© 2023 Branch.co \n All rights reserved`}</p>
+        </div>
+
+        <div className={classNames("has-space-between", footerStyles.links)}>
+          {FOOTER_LINKS.map(section => (
+            <ul
+              key={section.title}
+              className={classNames("is-flex-column", footerStyles.linkSection)}
+            >
+              <p
+                className={classNames(
+                  "typography--tiny",
+                  footerStyles.linkSectionTitle
+                )}
+              >
+                {section.title}
+              </p>
+
+              <div className={"is-flex-column"}>
+                {section.links.map(link => (
+                  <a
+                    key={link.title}
+                    className={"typography--tiny is-flex-column"}
+                    href={link.url}
+                  >
+                    {link.title}
+                  </a>
+                ))}
+              </div>
+            </ul>
+          ))}
+        </div>
+      </footer>
+    </div>
   )
 }
 

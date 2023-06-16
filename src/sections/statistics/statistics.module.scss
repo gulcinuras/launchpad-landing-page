@@ -1,0 +1,39 @@
+.statistics {
+  position: relative;
+  z-index: 2;
+
+  gap: 53px;
+  margin: 120px 72px;
+}
+
+.title {
+  max-width: 789px;
+
+  font-size: 60px;
+}
+
+.description {
+  max-width: 562px;
+
+  margin: 82px 0 36px;
+
+  color: #DFB6FF;
+}
+
+.joinBranchButton {
+  max-width: 250px;
+}
+
+.statisticsData {
+  gap: 56px;
+
+  h1 {
+    font-size: 92px;
+  }
+
+  p {
+    max-width: 275px;
+
+    color: #DFB6FF;
+  }
+}

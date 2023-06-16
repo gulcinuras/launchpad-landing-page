@@ -1,0 +1,21 @@
+.joinBranch {
+  gap: 36px;
+
+  padding: 0 72px;
+
+  > h2 {
+    max-width: 466px;
+  }
+}
+
+.description {
+  max-width: 615px;
+
+  gap: 36px;
+
+  color: #B8B8B8;
+  
+  > button {
+    max-width: 250px;
+  }
+}
